@@ -78,7 +78,7 @@
                 <div class="caption-content">
                   <a href="img/SS/large/1.jpg" class="single_image">
                     <i class="fa fa-check"></i><br>
-                    <p>Системы отопления</p>
+                    <p>Системы отопления1</p>
                   </a>
                 </div>
                 </figcaption>
@@ -192,7 +192,7 @@
     <div class="ft-section">
       <div class="ft-page">
       <script type="text/javascript" src="jsale/jsale/JS.php?"></script>
-     <!--  <h1>Как купить?</h1>
+       <h1>Как купить?</h1>
         <div class="advice">Выберите вид фасовки и нажмите кнопку &laquo;Заказать&raquo;</div>
         
           <div class="container">
@@ -249,7 +249,7 @@
                 Задайте их на странице ниже<br>
                 <i class="fa fa-chevron-down"></i>
               </div>
-          </div>-->
+          </div>
       </div>
       <div class="ft-page fourth">
         <h1>Задать вопрос</h1>

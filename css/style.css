@@ -1,0 +1,601 @@
+/*vibor massi*/
+#Label2 {display: none}
+#Label1 {display: none}
+
+/*======================================*/
+
+.buttonBar {
+	display: none;
+}
+.mb_YTVPProgress {
+	display: none;
+}
+.anotherbutton .btn {
+	background-color: #24388D !important;
+
+}
+.abutt {
+	background-color: rgba(91,192,222,0.1) !important;
+	border-color: #46B8DA !important;
+}
+.center-block {
+	display: block;
+ 	margin-left: auto;
+	margin-right: auto;
+}
+#logo {
+	display: block;
+	position: absolute;
+	right: 1%;
+	top:20%;
+	float: none;
+	color: rgb(36,56,141)
+}
+#logo address {
+	color: rgb(36,56,141) !important;
+}
+#logo a:hover {
+	text-decoration: none;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	color: rgb(36,56,141);
+}
+/* ==========================================================================
+varianty fasovki
+========================================================================== */
+
+.thumbs {
+	background-color: transparent;
+	border: none;
+	color: white !important;
+}
+/* pre-loader */
+.l-preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+	overflow: hidden;
+	background-color: #fff;
+	}
+	.l-preloader-bar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 0;
+		width: 100%;
+		background-color: #f2f2f2;
+		}
+	.l-preloader-counter {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 60px;
+		font-family: 'impactregular' !important;
+		text-align: center;
+		line-height: 100px;
+		height: 100px;
+		width: 200px;
+		margin: -50px 0 0 -100px;
+		color: #444;
+		}
+
+ 
+
+ /* fonts */
+ @font-face {
+    font-family: 'impactregular';
+    src: url('../assets/fonts/impact-webfont.eot');
+    src: url('../assets/fonts/impact-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/impact-webfont.woff2') format('woff2'),
+         url('../assets/fonts/impact-webfont.woff') format('woff'),
+         url('../assets/fonts/impact-webfont.ttf') format('truetype'),
+         url('../assets/fonts/impact-webfont.svg#impactregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sf_ui_displaylight';
+    src: url('../assets/fonts/sf-ui-display-light-webfont.eot');
+    src: url('../assets/fonts/sf-ui-display-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/sf-ui-display-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/sf-ui-display-light-webfont.woff') format('woff'),
+         url('../assets/fonts/sf-ui-display-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sf_ui_displaythin';
+    src: url('../assets/fonts/sf-ui-display-thin-webfont.eot');
+    src: url('../assets/fonts/sf-ui-display-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/sf-ui-display-thin-webfont.woff2') format('woff2'),
+         url('../assets/fonts/sf-ui-display-thin-webfont.woff') format('woff'),
+         url('../assets/fonts/sf-ui-display-thin-webfont.ttf') format('truetype'),
+         url('../assets/fonts/sf-ui-display-thin-webfont.svg#sf_ui_displaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'helveticaneuecyrthin';
+    src: url('../assets/fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('../assets/fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('../assets/fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('../assets/fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('../assets/fonts/roboto-light-webfont.eot');
+    src: url('../assets/fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/roboto-light-webfont.woff') format('woff'),
+         url('../assets/fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('../assets/fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'textbookcyrillic';
+    src: url('../assets/fonts/textbook-cyrillic_allfont.ru-webfont.eot');
+    src: url('../assets/fonts/textbook-cyrillic_allfont.ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/textbook-cyrillic_allfont.ru-webfont.woff2') format('woff2'),
+         url('../assets/fonts/textbook-cyrillic_allfont.ru-webfont.woff') format('woff'),
+         url('../assets/fonts/textbook-cyrillic_allfont.ru-webfont.ttf') format('truetype'),
+         url('../assets/fonts/textbook-cyrillic_allfont.ru-webfont.svg#textbookcyrillic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on December 29, 2012 05:04:11 AM America/New_York */
+
+/* заголовки */
+#main-title {
+	font-family: 'impactregular';
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	
+	font-size: 5em;
+}
+
+/* верхний хедер с тайтлами */
+ .titles {
+      text-align: justify;
+      padding: 0.5em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #24388D;
+      min-height: 30px;
+      color: #fff;
+      font-family: 'sf_ui_displaylight';
+    }
+
+    .titles:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .title-prev {
+      width: 45%;
+      float: left;
+      cursor: pointer;
+    }
+
+    .title-next {
+      text-align: right;
+      width: 45%;
+      float: right;
+      cursor: pointer;
+    }
+/* backgrnd video */
+body{
+            border:none;
+            margin:0;
+            
+            background: #444;
+            
+        }
+
+        .player{
+            display:inline-block;
+            vertical-align:top;
+            position:relative;
+            width:500px;
+            height:350px;
+            margin-top:100px!important;
+            left:0;
+            overflow: hidden;
+            border-radius: 4px;
+            -moz-box-shadow: 0 0 10px rgba(0,0,0,.5);
+            box-shadow: 0 0 10px rgba(0,0,0,.5);
+        }
+
+/* 1ая страница */
+.jumbotron {
+	background-color: transparent !important;
+}
+.main_list li {
+	font-family: 'sf_ui_displaythin' !important;
+	
+}
+#first-button {
+	background-color: transparent;
+	font-family: 'robotolight';
+	font-size: 14pt;
+	color: white;
+}
+.btn-info:hover {
+	background-color: rgba(255,255,255,0.1) !important;
+}
+/* вторая страница */
+
+.second,.fourth {
+	background-color: #fff !important;
+	
+}
+.cont_photo {
+	margin-left: -100px !important;
+}
+.second h1 {color: #24388D !important;}
+.screenshots ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.screenshots ul li {
+    float: left;
+    min-height: 100%;
+    width: 25%;
+    background-color: #000;
+    list-style: none;
+}
+.screenshots figure {
+    position: relative;
+    overflow: hidden;
+}
+.screenshots figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover img, .screenshots figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.screenshots figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 97, 132, 0.85);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figcaption a {
+    color: #fff
+}
+.screenshots figcaption a:hover, .screenshots figcaption a:focus {
+    color: #73d0da;
+    text-decoration: none !important;
+}
+.screenshots figure:hover figcaption, .screenshots figure:focus figcaption {
+    opacity: 1
+}
+.visible {
+    opacity: 1
+}
+.screenshots figure.cs-hover figcaption {
+    opacity: 1
+}
+.screenshots figcaption i {
+    font-size: 35px;
+    display: block;
+    float: none;
+    text-align: center;
+
+}
+.screenshots figcaption p {
+    margin-bottom: 0;
+    
+    font-size: 2em;
+    font-family: 'textbookcyrillic' !important;
+    text-align: center;
+    color: #fff;
+}
+.screenshots figcaption .caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.screenshots figure:hover figcaption .caption-content, .screenshots figure:focus figcaption .caption-content {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+
+}
+/* третья страница */
+.w-contacts-item a {
+	text-decoration: none !important;
+	color:#24388D;
+}
+.w-contacts-item a:hover {
+	text-decoration: none !important;
+}
+.no-touch .w-contacts a:hover {
+	border-bottom: 1px solid;
+	}
+.ft-page .w-contacts-list {
+	margin: 0 -28px;
+	}
+	.ft-page .w-contacts-item {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0;
+		padding: 0 20px;
+		margin-bottom: 15px;
+		}
+		.ft-page .w-contacts-item > i {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 24px;
+			text-align: center;
+			line-height: 50px;
+			height: 50px;
+			width: 50px;
+			margin: 8px;
+			border-radius: 50%;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+			background-color: #f2f2f2;
+			color: #444;
+			}
+		.ft-page .w-contacts-item-value {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 24px;
+			line-height: 34px;
+			margin: 0 8px;
+			/*text-transform: uppercase;*/
+			}
+.advice {
+	display: block;
+	position: relative;
+	margin-top: 20px;
+	font-family: 'textbookcyrillic';
+	font-size: 1.7em;
+}
+.w-form {
+	text-align: center;
+	max-width: 450px;
+	margin: 0 auto;
+	}
+	.w-form .g-form-row-label {
+		text-align: left;
+		}
+	.w-form .g-form-row-field {
+		position: relative;
+		}
+		.w-form .g-form-row-field > i {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-size: 20px;
+			text-align: center;
+			line-height: 42px;
+			height: 42px;
+			width: 50px;
+			z-index: 1;
+			filter:progid:DXImageTransform.Microsoft.Alpha(opacity=33); /* hack for IE8 */
+			opacity: 0.33;
+			}
+			.w-form .g-form-row-field > input[type="text"],
+			.w-form .g-form-row-field > input[type="password"],
+			.w-form .g-form-row-field > input[type="email"],
+			.w-form .g-form-row-field > textarea,
+			.w-form .g-form-row-field > select {
+				padding-left: 50px;
+				}
+.g-form-row {
+    padding: 0 0 15px;
+	}
+	.g-form-row-label {
+		font-size: 1em;
+		margin-bottom: 5px;
+		}
+		input[type="text"],
+		input[type="password"],
+		input[type="email"],
+		input[type="url"],
+		input[type="tel"],
+		input[type="number"],
+		input[type="date"],
+		textarea,
+		select {
+			border: none;
+			font-size: 16px;
+			height: 42px;
+			padding: 10px;
+			border-radius: 5px;
+			border-top: 1px solid rgba(0,0,0,0.08);
+			box-shadow: 0 0 0 2px rgba(0,0,0,0);
+			-webkit-transition: box-shadow 0.3s ease;
+					transition: box-shadow 0.3s ease;
+			background-color: #f2f2f2;
+			}
+		textarea {
+			height: 150px;
+			line-height: 24px;
+			}
+			input[type="text"]:focus,
+			input[type="password"]:focus,
+			input[type="email"]:focus,
+			input[type="url"]:focus,
+			input[type="tel"]:focus,
+			input[type="number"]:focus,
+			input[type="date"]:focus,
+			textarea:focus,
+			select:focus {
+				border-color: transparent;
+				box-shadow: 0 0 0 2px #999;
+				}
+
+/* Buttons */
+.g-btn,
+input[type="submit"] {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+	padding: 13px 40px;
+	margin: 4px 0;
+	border: none !important;
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-transition: background-color 0.3s ease, color 0.3s ease;
+			transition: background-color 0.3s ease, color 0.3s ease;
+	}
+	.g-btn span {
+		position: relative;
+		z-index: 1;
+		}
+	.g-btn span i {
+		margin: 0 14px 0 -2px;
+		line-height: .9em;
+		}
+	.g-btn:active {
+		top: 0;
+		}
+	.no-touch .g-btn:after {
+		display: block;
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 0;
+		width: 100%;
+		z-index: 0;
+		-webkit-transition: height 0.3s ease;
+				transition: height 0.3s ease;
+		}
+		.no-touch .g-btn:hover:after {
+			height: 100%;
+			}
+	/* TYPE: default */
+	.g-btn.type_default {
+		background-color: #e8e8e8;
+		color: #444;
+		}
+		.no-touch .g-btn.type_default:after {
+			background-color: #444;
+			}
+		.no-touch .g-btn.type_default:hover {
+			color: #fff;
+			}
+	/* TYPE: primary */
+	.g-btn.type_primary,
+	input[type="submit"] {
+		background-color: #31c5c7;
+		color: #fff;
+		}
+		.no-touch .g-btn.type_primary:after,
+		.no-touch input[type="submit"]:hover {
+			background-color: #444;
+			}
+		.no-touch .g-btn.type_primary:hover,
+		.no-touch input[type="submit"]:hover {
+			color: #fff;
+			}
+	/* TYPE: secondary */
+	.g-btn.type_secondary {
+		background-color: #444;
+		color: #fff;
+		}
+		.no-touch .g-btn.type_secondary:after {
+			background-color: #31c5c7;
+			}
+		.no-touch .g-btn.type_secondary:hover {
+			color: #fff;
+			}
+	/* SIZE: small */
+	.g-btn.size_small,
+	input.g-btn.size_small,
+	button.g-btn.size_small {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 10px 30px;
+		}
+	/* SIZE: big */
+	.g-btn.size_big,
+	input.g-btn.size_big,
+	button.g-btn.size_big {
+		font-size: 22px;
+		line-height: 32px;
+		padding: 14px 44px;
+		}
+		
+/* Alerts */
+.g-alert {
+	text-align: left;
+    padding: 0 20px;
+	border-radius: 3px;
+	}
+	.g-alert-close {
+		right: -38px;
+		top: 12px;
+		font-size: 20px;
+		text-align: center;
+		line-height: 30px;
+		height: 30px;
+		width: 30px;
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30); /* hack for IE8 */
+		opacity: 0.3;
+		-webkit-transition: opacity 0.3s ease;
+				transition: opacity 0.3s ease;
+		}
+		.g-alert-close:hover {
+			filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100); /* hack for IE8 */
+			opacity: 1;
+			}
+	.g-alert-body {
+		padding: 15px 0;
+		}
+		.g-alert-body p {
+			margin: 0;
+			}
+.fourth h1 {
+	color: #24388D !important;
+}
+.fourth {
+	color: #24388D !important;
+	
+}

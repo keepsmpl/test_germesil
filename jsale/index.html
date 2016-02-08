@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>Демонстрация jSale – удобный скрипт одиночных заказов</title>
+	<script type="type/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+</head>
+<body>
+<div id="wrapper">
+	<header id="header">
+		<a href="" title="На главную страницу"><h2>Демонстрация работы jSale</h2></a>
+	</header><!-- #header-->
+
+	<section id="middle">
+
+		<div id="container">
+			<article id="content">
+				<h1>jSale – удобный скрипт быстрых заказов</h1>
+				<h4>Пример вставки нескольких товаров на странице</h4>
+				
+				<br>
+				
+				<!-- Самый простой вариант. Товар берёт из файла конфигурации -->
+				<script src="jsale/JS.php" type="text/javascript"></script>
+				<!-- На всякий случай пропишите предупреждение в <noscript> -->
+				<noscript><span class="error">Для отправки заказа включите в браузере JavaScript</span></noscript>
+				
+				<br><br>
+				<!-- В параметрах можно задать различные данные -->
+				<script src="jsale/JS.php?code=003&title=Крутой товар&price=10&qty=1&unit=м.&param1=Красный&param2=XL&param3=Ещё что-то" type="text/javascript"></script>
+
+				<br><br>
+				<!-- Также можно прописать уникальный текст кнопки -->
+				<script src="jsale/JS.php?code=123&title=телевизор&price=1792&qty=1&qty_type=text&button_text=Сделать заказ&discount=10" type="text/javascript"></script>
+				
+				<br><br>
+				<!-- Или другой метод вывода формы на экран. Варианты: form и button. Попробуйте подставить form -->
+				<script src="jsale/JS.php?form_type=button" type="text/javascript"></script>
+
+				<br><br>
+				<!-- Или другой шаблон -->
+				<script src="jsale/JS.php?template=2" type="text/javascript"></script>				
+
+				<br><br>
+				<!-- Можете даже вставить описание товара возле кнопки -->
+				<script src="jsale/JS.php?code=007&title=Ещё товар 007&price=122.01&qty=2&unit=т.&description=<p>Рядом с кнопкой можно вставить краткое описание товара.</p>" type="text/javascript"></script>
+
+				<br><br>
+			</article><!-- #content-->
+		</div><!-- #container-->
+
+	</section><!-- #middle-->
+
+	<footer id="footer">
+		<p>2013 @ <a href="http://jsale.biz">jsale.biz</a></p>
+	</footer><!-- #footer -->
+
+</div><!-- #wrapper -->
+</body>
+</html>

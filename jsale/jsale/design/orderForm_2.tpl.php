@@ -1,14 +1,21 @@
 <form action="<?= $config['sitelink'] . $config['dir'] ?>relay.php" method="post" class="jSaleForm" id="jsale_form_<?= $id_form ?>">
-	<h6 style="background: #ff0;">Это шаблон #2. Можете изменять форму как угодно</h6>
+
 	<? if (isset($message)): ?>
 	<h6 class="jSaleMessage">
 		<?= $message; ?>
 	</h6>
 	<? else: ?>
 	<h6>
-		Оформление заказа: <?= $product['title']; ?>
+		Оформление заказа: <b>Автогермесил</b>
 	</h6>
 	<? endif; ?>
+	<b>Выберите массу тюбика:</b> <br>
+	<select name="weight" id="weight" onchange="show_product(this)">
+
+		<option id="70" value="1">Автогермесил 70г</option>
+		<option id="160" value="2">Автогермесил 160г</option>
+	</select>
+	<br>
 	<? if ($config['form']['lastname']['enabled'] == true): ?>
 	<p class="float">
 		<label><?= $config['form']['lastname']['label'];?><? if ($config['form']['lastname']['required'] == true): ?><span class="attention" title="Поле, обязательное к заполнению">*</span><? endif;?></label><br>
@@ -127,7 +134,10 @@
 			Ваша скидка: <?= $discount;?> <?if ($config['discounts']['fixed'] === true):?><?= $config['currency'] ?><? else: ?>%<? endif; ?> Ваша цена: <span id="subtotal"><?= number_format($order_sum, 2, '.', '');?></span> <?= $config['currency'];?>
 		</span>
 	<? else: ?>
-		Стоимость заказа: <span id="subtotal"><?= $order_sum ?></span> <?= $config['currency'];?>
+        <div id="stotal">
+		Стоимость заказа: <span><b><?= $order_sum = $product['price'] * $product['qty'] ?></b></span> <?= $config['currency'];?></div>
+        <div id="stotal2" style="display: none">
+		Стоимость заказа: <span id="subtotal"><b><?= $order_sum = $product['param2'] * $product['qty'] ?></b></span> <?= $config['currency'];?></div>
 	<? endif; ?>
 	</p>
 	
@@ -162,10 +172,35 @@
 
 		<input type="hidden" name="product_qty_type" value="<?= $product['qty_type']; ?>">
 		
-		<div style="font-size: 80%; color: #333; text-align: center;">Заказы принимаются с помощью <a href="http://jsale.biz">JSale</a></div>
+
 	</p>
 </form>
 <script type="text/javascript">
+
+function show_product(a){
+
+
+    var label = a.value;
+
+    if (label==1) {
+
+       document.getElementById("stotal").style.display='block';
+       document.getElementById("stotal2").style.display='none';
+
+
+
+
+
+    } else {
+        document.getElementById("stotal").style.display='none';
+        document.getElementById("stotal2").style.display='block';
+
+
+    }
+
+};
+
+
 function show_payment_info(select)
 {
 	var payments = eval(<?= json_encode($config['payments']) ?>);

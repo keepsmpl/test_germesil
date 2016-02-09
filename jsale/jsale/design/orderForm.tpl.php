@@ -5,7 +5,7 @@
 	</h6>
 	<? else: ?>
 	<h6>
-		Оформление заказа: <b><?= $product['title']; ?></b>
+		Оформление заказа: <?= $product['title']; ?>
 	</h6>
 	<? endif; ?>
 	<? if ($config['form']['lastname']['enabled'] == true): ?>
@@ -84,7 +84,7 @@
         <div id="payment_info">
         <? foreach ($config['payments'] as $type => $payment): ?>
             <? if ($payment['enabled'] == true): ?>
-            <p class="<?= $type ?>"><b><?= $payment['info'] ?></b></p>
+            <p class="<?= $type ?>"><?= $payment['info'] ?></p>
             <? endif; ?>
         <? endforeach; ?>
         </div>
@@ -126,7 +126,7 @@
 			Ваша скидка: <?= $discount;?> <?if ($config['discounts']['fixed'] === true):?><?= $config['currency'] ?><? else: ?>%<? endif; ?> Ваша цена: <span id="subtotal"><?= number_format($order_sum, 2, '.', '');?></span> <?= $config['currency'];?>
 		</span>
 	<? else: ?>
-		Стоимость заказа: <span id="subtotal"><b><?= $order_sum ?></b></span> <?= $config['currency'];?>
+		Стоимость заказа: <span id="subtotal"><?= $order_sum ?></span> <?= $config['currency'];?>
 	<? endif; ?>
 	</p>
 	

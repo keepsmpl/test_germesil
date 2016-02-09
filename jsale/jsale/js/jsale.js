@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
 			}
 		});
 	});
-	
+
 	$('body').on('keyup', '.jSaleCode', function(e) {
 
 		var newCode = $(this).val();
